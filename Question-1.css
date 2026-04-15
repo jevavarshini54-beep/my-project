@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    background: linear-gradient(135deg, #0f0f0f, #1f2a40);
+}
+
+.top-part{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 17px;
+    border-right: 1px solid white;
+}
+.profile img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.heading{
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.heading h2{
+    margin: 0px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.heading p{
+    margin: 0px;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.pop-up{
+    color: white;
+    border: 2px solid red;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pop-up h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+.left-part{
+    display: grid;
+    width: 20%;
+    background: pink;
+}
