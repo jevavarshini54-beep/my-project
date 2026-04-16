@@ -6,17 +6,16 @@ function openPopup(type) {
     
   if (type === 'income'){
     title.innerText = "Income Details";
-    details.innerHTML = `<b>Total income : </b>
-                        <p>₹182560</p>`;
+    details.innerHTML = `<p><b>Total income : </b>₹95000</p>`;                       
     table.innerHTML = `<table>
-                          <caption>Month History</caption>
+                          <caption>Month : April</caption>
                           <tr>
                             <th>Description</th>
                             <th>Amount Received</th>
                           </tr>
                           <tr>
                             <td>Salary</td>
-                            <td>₹132000</td>
+                            <td>₹95000</td>
                           </tr>`;
 
     dialog.showModal();
@@ -24,10 +23,9 @@ function openPopup(type) {
 
   if (type === 'expense'){
     title.innerText = "Expense Details";
-    details.innerHTML = `<b>Total expense : </b>
-                        <p>₹20189</p>`;
+    details.innerHTML = `<p><b>Total expense : </b>₹20189</p>`;                       
     table.innerHTML = `<table>
-                          <caption>Month History</caption>
+                          <caption>Month : April</caption>
                           <tr>
                             <th>Description</th>
                             <th>Amount Spent</th>
@@ -62,10 +60,9 @@ function openPopup(type) {
 
   if (type === 'savings'){
     title.innerText = "Savings Details";
-    details.innerHTML = `<b>Amount in savings : </b>
-                        <p>₹20000</p>`;
+    details.innerHTML = `<p><b>Amount in savings : </b>₹20000</p>`;                     
     table.innerHTML = `<table>
-                          <caption>Month History</caption>
+                          <caption>Month : April</caption>
                           <tr>
                             <th>Description</th>
                             <th>Amount</th>
@@ -88,10 +85,10 @@ function openPopup(type) {
 
   if (type === "balance"){
     title.innerText = "Balance Details";
-    details.innerHTML = `<b>Balance : </b>
-                        <p>₹54811</p>`;
+    details.innerHTML = `<p><b>Balance : </b>₹54811</p>`;
+                        
     table.innerHTML = `<table>
-                          <caption>Month History</caption>
+                          <caption>Month : April</caption>
                           <tr>
                             <th>Balance</th>
                             <th>₹54811</th>
@@ -102,7 +99,7 @@ function openPopup(type) {
   if (type === 'transactions'){
     title.innerText = "Transaction Details";
     table.innerHTML = `<table>
-                          <caption>Month History</caption>
+                          <caption>Month : April</caption>
                           <tr>
                             <th>Date</th>                       
                             <th>Description</th>
@@ -138,8 +135,25 @@ function openPopup(type) {
                             <td>Expense</td>
                             <td>Room Rent</td>
                             <td>₹10000</td>
+                          </tr>
+                          <tr>
+                            <td>05 Apr 2026</td>
+                            <td>Expense</td>
+                            <td>Gift</td>
+                            <td>₹800</td>
+                          </tr>
+                          <tr>
+                            <td>05 Apr 2026</td>
+                            <td>Expense</td>
+                            <td>Shoes</td>
+                            <td>₹1900</td>
                           </tr>`;
 
     dialog.showModal();
   }
   }
+
+function closePopup(id){
+  const dialog = document.getElementById('popup-dialog');
+  dialog.close();
+}
