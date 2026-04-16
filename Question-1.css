@@ -60,6 +60,7 @@ body{
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: inherit;
     background-color: #1F2937;
     box-shadow: 8px 10px 15px rgba(250, 204, 21, 0.3);
 
