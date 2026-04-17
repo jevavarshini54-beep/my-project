@@ -6,10 +6,10 @@
   <meta name="viewport" content="width = device-width, initial-scale = 1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="Question-1.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-  <script src="script.js"></script>
   <div>
     <div class="top-part">
       <div class="profile">
@@ -21,7 +21,7 @@
         <p>"Track Smart, Spend Wise"</p>
       </div>
     </div>
-    <div>
+    <div class="left_right">
       <div class="left-part">
         <button class="pop-up" onclick="openPopup('income')">
           <h3>Income</h3>
@@ -40,8 +40,12 @@
         </button>
       </div>
       <div class="right-part">
-        <div class="bar-chart"></div>
-        <div class="pie-chart"></div>
+        <div class="bar-chart">
+          <canvas id="bar-chart"></canvas>
+        </div>
+        <div class="pie-chart">
+          <canvas id="pie-chart"></canvas>
+        </div>
       </div>
     </div>
   </div>
@@ -54,6 +58,7 @@
       <table id="popup-table" class="popup-table"></table>
     </div>
   </dialog>
+  <script src="script.js"></script>
 </body>
 
 </html>

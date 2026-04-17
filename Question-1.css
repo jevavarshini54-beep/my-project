@@ -3,6 +3,10 @@ body{
     background: #121826;
 }
 
+.left_right{
+  display: flex;
+}
+
 .top-part{
     display: flex;
     padding: 10px 20px;
@@ -53,7 +57,9 @@ body{
     color: #F9FAFB;
     border: 2px solid rgb(250, 204, 21);
     border-radius: 20px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -74,7 +80,7 @@ body{
 }
 
 .left-part{
-    display: grid;
+    display: inline-grid;
     gap: 30px;
     width: 20%;
     margin-left: 30px;
@@ -86,7 +92,7 @@ body{
 }
 
 .close-btn{
-  width:30px;
+  width: 30px;
   height: 30px;
   position: absolute;
   top: 10px;
@@ -144,4 +150,22 @@ body{
 
 .popup-dialog::-webkit-scrollbar {
     display: none;
+}
+
+.right-part{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 40px;
+  padding: 40px;
+  height: 60vh;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-chart,.pie-chart{
+  width: 100%;
+  height: 100%;
+  position: relative;
 }

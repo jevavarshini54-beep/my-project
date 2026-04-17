@@ -157,3 +157,17 @@ function closePopup(id){
   const dialog = document.getElementById('popup-dialog');
   dialog.close();
 }
+
+const x_values = ["Income","Expense"]
+const y_values = [95000,20189]
+const bar_colours = ["rgb(38, 255, 0)","rgb(255, 25, 0)"]
+
+new Chart("bar-chart",{type : "bar",data : {labels : x_values, datasets : [{backgroundColor : bar_colours, data : y_values}]},
+          options : {plugins : {legend : {display: false}, title : {display : true, text : "Income vs Expense", font : {size:18}}}}});
+
+const X_values = ["Food&Groceries","Travel","Bills","Entertainment","Health","Others"]
+const Y_values = [5000,6000,3421,1567,3110,1091]
+const Pie_colours = ["#FEF08A", "#FDE047", "#FACC15", "#EAB308", "#A16207", "#713F12"]
+
+new Chart("pie-chart", {type: "pie", data: {labels: X_values, datasets: [{backgroundColor: Pie_colours, data: Y_values}]},
+                  options: {plugins: {legend: {position: "bottom", labels: {color: "rgb(255,255,255)", font: {size: 15}}}, title: {display: true, text: "Expense-Breakdown"}, font: {size:18}}}});
