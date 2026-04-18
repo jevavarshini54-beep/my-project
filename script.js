@@ -169,5 +169,5 @@ const X_values = ["Food&Groceries","Travel","Bills","Entertainment","Health","Ot
 const Y_values = [5000,6000,3421,1567,3110,1091]
 const Pie_colours = ["#FEF08A", "#FDE047", "#FACC15", "#EAB308", "#A16207", "#713F12"]
 
-new Chart("pie-chart", {type: "pie", data: {labels: X_values, datasets: [{backgroundColor: Pie_colours, data: Y_values}]},
+new Chart("pie-chart", {type: "doughnut", data: {labels: X_values, datasets: [{backgroundColor: Pie_colours, data: Y_values}]},
                   options: {plugins: {legend: {position: "bottom", labels: {color: "rgb(255,255,255)", font: {size: 15}}}, title: {display: true, text: "Expense-Breakdown"}, font: {size:18}}}});

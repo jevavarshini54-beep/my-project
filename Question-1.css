@@ -169,3 +169,22 @@ body{
   height: 100%;
   position: relative;
 }
+
+@media screen and (max-width: 768px) {
+
+    .left_right {
+        flex-direction: column !important;
+        height: auto;
+    }
+    .right-part {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    .bar-chart, .pie-chart {
+        width: 100%;
+        min-height: 350px;
+        overflow: hidden;
+    }
+}
